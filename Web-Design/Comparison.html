@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" id="nbox">LATITUDE</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="plot_temp.html">Temperature</a></li>
+            <li><a href="plot_cloud.html">Cloudiness</a></li>
+            <li><a href="plot_humid.html">Humidity</a></li>
+            <li><a href="plot_wind.html">Wind</a></li>
+          </ul>
+        </li>
+        <li><a href="Comparison.html">Comparison</a></li>
+        <li><a href="Data.html">Data</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container section">
+<h1 class="heading">Comparison: Latitude vs. X</h1>
+Click on any plot to get an in-depth analysis.
+
+          <div class="row">
+          <div class="col-md-6 box">
+            <h1>vs. Cloudiness</h1> 
+            <a href="plot_cloud.html" >
+            <img src="Images/Cloud.png" alt="Cloudiness"/>
+            </a>
+          </div>
+          
+        
+          <div class="col-md-6 box">
+              <h1>vs. Humidity</h1> 
+            <a href="plot_humid.html" >
+            <img  src="Images/Humidity.png" alt="Humidity"/>
+            </a>
+          </div>
+          </div>
+
+        <div class="row">
+          <div class="col-md-6 box">
+            <h1>vs. Temperature</h1> 
+            <a href="plot_temp.html" >
+            <img src="Images/Temp.png" alt="Temperature" />
+            </a>
+          </div>
+          
+          <div class="col-md-6 box">
+            <h1>vs. Wind Speed</h1> 
+            <a href="plot_wind.html" >
+            <img  src="Images/Wind.png" alt="Wind" />
+            </a>
+          </div>
+        
+        </div>
+    </div>
+    
+    </body>
+    
+    <footer id="nbox" class="footer">Weather Visualization</footer>
+    
+    </html>

@@ -1,0 +1,53 @@
+.body{background: lightgray;
+        position: relative;
+}
+
+.section {background: white;
+        position: relative;
+        padding: 20px 10px 10px 20px;
+        border: 20px 10px 10px 20px;
+        margin-bottom: 40px
+}
+
+.heading {color: chocolate;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+}
+.footer {bottom: 0}
+
+#nbox {background: chocolate;
+        color: white;
+        text-align: center
+}
+
+.box{position: relative;
+        color: chocolate;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+}
+
+#border{border: 2px solid black}
+
+.img1 {
+        left: 40px
+}
+
+.p {float: left;
+        overflow: auto;
+
+}
+
+.img2 {float: left;
+        height: 4cm;
+        width: 6cm
+}
+
+.img3 {float: right;
+        height: 4cm;
+        width: 6cm
+}
+
+
+
