@@ -12,19 +12,19 @@
 </head>
 
 <body class="body">
-
-  <nav class="navbar navbar-default">
+<!--Nav Bar ___________________________________________________-->
+<nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" id="nbox" href="index.html">LATITUDE</a>
+        <a href="index.html" class="navbar-brand" id="nbox">LATITUDE</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="plot_temp.html">Temperature</a></li>
-            <li><a href="plot_cloud.html">Cloudiness</a></li>
-            <li><a href="plot_humid.html">Humidity</a></li>
-            <li><a href="plot_wind.html">Wind</a></li>
+            <li><a href="plot_temp.html"><i class="glyphicon glyphicon-fire"></i> Temperature</a></li>
+            <li><a href="plot_cloud.html"><i class="glyphicon glyphicon-cloud"></i> Cloudiness</a></li>
+            <li><a href="plot_humid.html"><i class="glyphicon glyphicon-tint"></i> Humidity</a></li>
+            <li><a href="plot_wind.html"><i class="glyphicon glyphicon-flag"></i> Wind Speed</a></li>
           </ul>
         </li>
         <li><a href="Comparison.html">Comparison</a></li>
@@ -33,49 +33,61 @@
     </div>
   </nav>
 
+<!--End of Nav Bar____________________________________-->
 
 <div class="container">
-<div class="row">
-    <div class="col-md-6 section">
-    <h2 class="heading">Wind</h2>
-    <img class="img1"  src="Images/Wind.png" alt="Wind"/>
-        <p> While there is no significant relationship between latitude and wind speed on this one day
-          there could be other factors contributing to the low winds on January 13, 2019
-        </p>
-    </div>
-
-    <div class="col-md-1"></div>
-
-     <div class="col-sm-5 section">
-        <h2 class="heading">Visualizations</h2>
-      <div>
-        <a href="plot_cloud.html" >
-        <img class="img2" src="Images/Cloud.png" alt="Cloudiness"/>
-        </a>
-      </div>
+    <div class="row">
+        
+        <div class="col-sm-6 section">
+        
+        <h2 class="heading">Wind Speed</h2>
+          
+          <img class="img2" src="Images/Wind.png" alt="Wind Speed"/>
+          <p> While there is no significant relationship between latitude and wind speed on this one day
+              there could be other factors contributing to the low winds on January 13, 2019
+          </p>
+          
+        </div>
+        <!-- Box on Left___________________________________________________________________-->
+        <div class="col-sm-5 section">
+          <h2 class="heading">Visualizations</h2>
+    
+          <div class="row">
+            <div class="col-sm-6">
+            <a href="plot_temp.html" >
+            <img class="img2" src="Images/Temp.png" alt="Temperature"/>
+            </a>
+            </div>
+    
+            <div class="col-sm-6">
+                <a href="plot_cloud.html" >
+                <img class="img2" src="Images/Cloud.png" alt="Cloudiness"/>
+                </a>
+               </div>
+          </div>
+    
+          <div class="row">
+              <div class="col-sm-6">
+              <a href="plot_wind.html" >
+              <img class="img2 border" src="Images/Wind.png" alt="Wind Speed"/>
+              </a>
+              </div>
       
-      <div>
-        <a href="plot_humid.html" >
-        <img class="img3" src="Images/Humidity.png" alt="Humidity"/>
-        </a>
-      </div>
-      
-      <div>
-        <a href="plot_temp.html" >
-        <img class="img2" src="Images/Temp.png" alt="Temperature" />
-        </a>
-      </div>
-
-      <div>
-          <a href="plot_wind.html" >
-          <img class="img3" src="Images/Wind.png" alt="Wind" />
-          </a>
-      </div>
-         
-    </div>
-
+              <div class="col-sm-6">
+                  <a href="plot_humid.html" >
+                  <img class="img2" src="Images/Humidity.png" alt="Humidity"/>
+                  </a>
+                 </div>
+            </div>
+    
+        </div>
+    
+  </div>
 </div>
-</div>
+
+
+
+ 
 
 </body>
 

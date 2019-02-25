@@ -12,19 +12,19 @@
 </head>
 
 <body class="body">
-
-  <nav class="navbar navbar-default">
+<!--Navigation Bar-->
+<nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html" id="nbox">LATITUDE</a>
+        <a href="index.html" class="navbar-brand" id="nbox">LATITUDE</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="plot_temp.html">Temperature</a></li>
-            <li><a href="plot_cloud.html">Cloudiness</a></li>
-            <li><a href="plot_humid.html">Humidity</a></li>
-            <li><a href="plot_wind.html">Wind</a></li>
+            <li><a href="plot_temp.html"><i class="glyphicon glyphicon-fire"></i> Temperature</a></li>
+            <li><a href="plot_cloud.html"><i class="glyphicon glyphicon-cloud"></i> Cloudiness</a></li>
+            <li><a href="plot_humid.html"><i class="glyphicon glyphicon-tint"></i> Humidity</a></li>
+            <li><a href="plot_wind.html"><i class="glyphicon glyphicon-flag"></i> Wind Speed</a></li>
           </ul>
         </li>
         <li><a href="Comparison.html">Comparison</a></li>
@@ -32,14 +32,15 @@
       </ul>
     </div>
   </nav>
+<!-- _______End Nav Bar______________________________________________ -->
 
 <div class="container section">
 <h1 class="heading">Comparison: Latitude vs. X</h1>
 Click on any plot to get an in-depth analysis.
 
-          <div class="row">
+  <div class="row">
           <div class="col-md-6 box">
-            <h1>vs. Cloudiness</h1> 
+            <h1 class="heading1">vs. Cloudiness</h1> 
             <a href="plot_cloud.html" >
             <img src="Images/Cloud.png" alt="Cloudiness"/>
             </a>
@@ -47,23 +48,23 @@ Click on any plot to get an in-depth analysis.
           
         
           <div class="col-md-6 box">
-              <h1>vs. Humidity</h1> 
+              <h1 class="heading1">vs. Humidity</h1> 
             <a href="plot_humid.html" >
             <img  src="Images/Humidity.png" alt="Humidity"/>
             </a>
           </div>
-          </div>
+  </div>
 
         <div class="row">
           <div class="col-md-6 box">
-            <h1>vs. Temperature</h1> 
+            <h1 class="heading1">vs. Temperature</h1> 
             <a href="plot_temp.html" >
             <img src="Images/Temp.png" alt="Temperature" />
             </a>
           </div>
           
           <div class="col-md-6 box">
-            <h1>vs. Wind Speed</h1> 
+            <h1 class="heading1">vs. Wind Speed</h1> 
             <a href="plot_wind.html" >
             <img  src="Images/Wind.png" alt="Wind" />
             </a>

@@ -13,74 +13,80 @@
 
 <body class="body">
 
+  <!-- Nav Bar_________________________________________________________________-->
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" id="nbox" href="index.html">LATITUDE</a>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html"  class="navbar-brand" id="nbox">LATITUDE</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="plot_temp.html"><i class="glyphicon glyphicon-fire"></i> Temperature</a></li>
+              <li><a href="plot_cloud.html"><i class="glyphicon glyphicon-cloud"></i> Cloudiness</a></li>
+              <li><a href="plot_humid.html"><i class="glyphicon glyphicon-tint"></i> Humidity</a></li>
+              <li><a href="plot_wind.html"><i class="glyphicon glyphicon-flag"></i> Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="Comparison.html">Comparison</a></li>
+          <li><a href="Data.html">Data</a></li>
+        </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="plot_temp.html">Temperature</a></li>
-            <li><a href="plot_cloud.html">Cloudiness</a></li>
-            <li><a href="plot_humid.html">Humidity</a></li>
-            <li><a href="plot_wind.html">Wind</a></li>
-          </ul>
-        </li>
-        <li><a href="Comparison.html">Comparison</a></li>
-        <li><a href="Data.html">Data</a></li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
 
+  <!--End of Nav BAr ________________________________________________________________-->
 
-<div class="container">
-  <div class="row">
-
-    <div class="col-md-6 section">
-    <h1 class="heading">Cloudiness</h1>
-      <img class="img1" src="Images/Cloud.png" alt="Cloud"/>
-        <p>  
-        The plot shows that there is no decipherable relationship between cloudiness and latitude of a city. 
-        While there is a scientific way to mesure the percentage of humidity it is not clear how the percentage
-        of cloudiness was measured and recorded.
-        </p>
-    </div>
-
-    <div class="col-md-1"></div>
-
-    <div class="col-sm-5 section">
-    
-    <h1 class="heading">Visualizations</h1>
-      <div>
-        <a href="plot_cloud.html" >
-        <img class="img2"  src="Images/Cloud.png" alt="Cloudiness"/>
-        </a>
-      </div>
+  <div class="container">
+    <div class="row">
+          
+          <div class="col-sm-6 section">
+          
+          <h2 class="heading">Cloudiness</h2>
+            
+            <img class="img2" src="Images/Cloud.png" alt="Cloudiness"/>
+            <p> The plot shows that there is no decipherable relationship between cloudiness and latitude of a city. 
+                While there is a scientific way to mesure the percentage of humidity it is not clear how the percentage
+                of cloudiness was measured and recorded.
+            </p>
+            
+          </div>
+          <!-- Box on Left___________________________________________________________________-->
+          
+          <div class="col-sm-5 section">
+            <h2 class="heading">Visualizations</h2>
       
-      <div>
-        <a href="plot_humid.html" >
-        <img class="img3" src="Images/Humidity.png" alt="Humidity"/>
-        </a>
-      </div>
+            <div class="row">
+              <div class="col-sm-6">
+              <a href="plot_temp.html" >
+              <img class="img2" src="Images/Temp.png" alt="Temperature"/>
+              </a>
+              </div>
       
-      <div>
-        <a href="plot_temp.html" >
-        <img class="img2" src="Images/Temp.png" alt="Temperature" />
-        </a>
-      </div>
+              <div class="col-sm-6">
+                  <a href="plot_cloud.html" >
+                  <img class="img2 border" src="Images/Cloud.png" alt="Cloudiness"/>
+                  </a>
+                 </div>
+            </div>
       
-      <div>
-        <a href="plot_wind.html" >
-        <img class="img3" src="Images/Wind.png" alt="Wind" />
-        </a>
-      </div>
-    
+            <div class="row">
+                <div class="col-sm-6">
+                <a href="plot_wind.html" >
+                <img class="img2" src="Images/Wind.png" alt="Wind Speed"/>
+                </a>
+                </div>
+        
+                <div class="col-sm-6">
+                    <a href="plot_humid.html" >
+                    <img class="img2" src="Images/Humidity.png" alt="Humidity"/>
+                    </a>
+                   </div>
+              </div>
+      
+          </div>
+      
     </div>
-    
-
   </div>
-</div>
 
 </body>
 

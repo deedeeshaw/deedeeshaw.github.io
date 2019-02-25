@@ -1,19 +1,26 @@
-.body{background: lightgray;
+.body{background: lightgrey;
         position: relative;
 }
 
 .section {background: white;
-        position: relative;
-        padding: 20px 10px 10px 20px;
-        border: 20px 10px 10px 20px;
-        margin-bottom: 40px
+        margin: 10px;
+        padding-bottom: 20px
 }
+
 
 .heading {color: chocolate;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         font-weight: bold;
+        border-bottom: 1px solid chocolate
 }
+
+.heading1 {color: chocolate;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+}
+
 .footer {bottom: 0}
 
 #nbox {background: chocolate;
@@ -21,33 +28,17 @@
         text-align: center
 }
 
-.box{position: relative;
-        color: chocolate;
-        font-family: Arial, Helvetica, sans-serif;
+.box{    
         text-align: center;
-        padding: 10px 5px 10px 5px;
+        padding: 10px
 }
 
-#border{border: 2px solid black}
-
-.img1 {
-        left: 40px
+.img2 {
+        height: 100%;
+        width: 100%;
 }
+img:active {border: 2px solid chocolate }
 
-.p {float: left;
-        overflow: auto;
-
-}
-
-.img2 {float: left;
-        height: 4cm;
-        width: 6cm
-}
-
-.img3 {float: right;
-        height: 4cm;
-        width: 6cm
-}
-
+.border {border: 2px solid chocolate }
 
 
