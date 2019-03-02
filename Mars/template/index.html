@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <!-- May not Need -----------------------------------------------------------------
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  
+  <title>Mars</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <!-- Render our data -->
+      <h1>Mission to Mars</h1>
+      <a class="btn btn-primary btn-lg" role="button" href="/scrape">Click here to Scrape New Data</a>
+    </div>
+
+    <div class='row'> <!-- First Row-->
+        <div class = 'col-sm-12'> 
+            <h2>Latest Mars News</h2>
+            <small>{{mars.headline}}</small>
+            <p>{{mars.article}}</p>
+        </div>
+    </div> <!-- End first row-->
+
+    <div class='row'> <!-- Second row-->
+        <div class="col-sm-8">
+            Featured Mars Image
+            picture here
+        </div>
+
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-12 box">
+                <h3>Current Weather on Mars</h3>
+                {{mars.weather}}
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-sm-12">
+                    <h3>Mars Facts</h3>
+                    {{mars.facts}}
+                </div>
+            </div>
+        </div>
+    </div> <!-- End second row -->
+
+    <div class="row"> <!-- Third row-->
+      <h2> Mars Hemispheres</h2> 
+
+    </div> <!-- End third row -->
+  
+
+</div> <!--end of container-->
+</body>
+
+</html>
