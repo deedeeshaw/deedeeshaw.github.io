@@ -20,7 +20,10 @@
     <div class="jumbotron text-center">
       <!-- Render our data -->
       <h1>Mission to Mars</h1>
-      <a class="btn btn-primary btn-lg" role="button" href="/scrape">Click here to Scrape New Data</a>
+      <form method="GET" action="{{url_for('scrape')}}">
+        <button name="scrapeBtn" type="submit">Scrape to Get Updated Data</button>
+    </form>
+     <!-- <a class="btn btn-primary btn-lg" role="button" href="/scrape">Click here to Scrape New Data</a>-->
     </div>
 
     <div class='row'> <!-- First Row-->
