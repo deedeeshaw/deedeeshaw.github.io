@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="/static/Style.css">
   <!-- May not Need -----------------------------------------------------------------
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -16,7 +16,7 @@
 
 <body>
   <div class="container">
-
+<!--______________NavBar______________________-->
     <div class="jumbotron text-center">
       <!-- Render our data -->
       <h1>Mission to Mars</h1>
@@ -25,6 +25,8 @@
     </form>
      <!-- <a class="btn btn-primary btn-lg" role="button" href="/scrape">Click here to Scrape New Data</a>-->
     </div>
+<!--______________End NavBar______________________-->
+
 
     <div class='row'> <!-- First Row-->
         <div class = 'col-sm-12'> 
@@ -36,8 +38,9 @@
 
     <div class='row'> <!-- Second row-->
         <div class="col-sm-8">
-            Featured Mars Image
-            picture here
+            <h2>Featured Mars Image</h2>
+            <img class='box' src ={{mars.featured_img}} />
+            
         </div>
 
         <div class="col-sm-4">
@@ -51,17 +54,19 @@
             <div class="row">
                     <div class="col-sm-12">
                     <h3>Mars Facts</h3>
-                    {{mars.facts}}
+                    {{mars.facts|safe}}
                 </div>
             </div>
         </div>
     </div> <!-- End second row -->
 
-    <div class="row"> <!-- Third row-->
+    <!-- Start third row -->
+    <div class="row">  
       <h2> Mars Hemispheres</h2> 
-
-    </div> <!-- End third row -->
-  
+      <img src = {{mars.hemisphere_image_urls}} />
+    </div> 
+    <!-- End third row -->
+    
 
 </div> <!--end of container-->
 </body>
