@@ -11,11 +11,77 @@ def init_browser():
 def scrape():
     browser = init_browser()
     mars = {}
+
+    # MARS HEMISHPERE IMAGES
+
+    url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
+    browser.visit(url)
+    html = browser.html
+    soup = bs(html, 'html.parser')
+    
+    hemis_html ='https://astrogeology.usgs.gov'
+    
+    browser.click_link_by_partial_text('Schiaparelli Hemisphere Enhanced')
+    time.sleep(5)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+    sc_h = soup.find('img', class_='wide-image')['src']
+    schi_h =hemis_html + sc_h
+
+    browser.back()
+    time.sleep(2)
+
+    browser.click_link_by_partial_text('Syrtis Major Hemisphere Enhanced')
+    time.sleep(5)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+    sy_h = soup.find('img', class_='wide-image')['src']
+    sym_h =hemis_html + sy_h
+
+    browser.back()
+    time.sleep(2)
+
+    browser.click_link_by_partial_text('Valles Marineris Hemisphere Enhanced')
+    time.sleep(5)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+    vm_h = soup.find('img', class_='wide-image')['src']
+    vam_h =hemis_html + vm_h
+
+    browser.back()
+    time.sleep(2)
+
+
+    browser.click_link_by_partial_text('Cerberus Hemisphere Enhanced')
+    time.sleep(10)
+    
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+
+    c_h = soup.find('img', class_='wide-image')['src']
+    cerb_h =hemis_html + c_h
+
+    
+    hemisphere_image_urls = [
+    {"title": "Schiaparelli Hemisphere", "img_url": schi_h},
+    {"title": "Cerberus Hemisphere", "img_url": cerb_h},
+    {"title": "Valles Marineris Hemisphere", "img_url": vam_h},
+    {"title": "Syrtis Major Hemisphere", "img_url": sym_h}
+    ]
+
+
 # MARS NEWS
 # Scrape the NASA Mars News Site and collect the latest News Title and Paragraph Text. 
     url = 'https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest'
     browser.visit(url)
-    # time.sleep(5)
+    time.sleep(2)
 
     news_html = browser.html
     soup = bs(news_html, 'html.parser')
@@ -57,18 +123,15 @@ def scrape():
     facts =facts_html.replace('\n', '')
 
 # MARS FEATURED IMAGE
-# Visit the url for JPL Featured Space Image here.
-# Use splinter to navigate the site and find the image url for the current Featured Mars Image 
-# and assign the url string to a variable called featured_image_url.
 # Make sure to find the image url to the full size .jpg image.
 # Make sure to save a complete url string for this image.
 
     url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
     browser.visit(url)
-    time.sleep(10)
+    time.sleep(5)
 
     browser.click_link_by_partial_text('FULL IMAGE')
-    time.sleep(10)
+    time.sleep(5)
     browser.click_link_by_partial_text('more info')
 
     html = browser.html
@@ -79,72 +142,7 @@ def scrape():
 
     featured_image_url = first_url + img_link
     
-# MARS HEMISHPERE IMAGES
-# Visit the USGS Astrogeology site here to obtain high resolution images for each of Mar's hemispheres.
-# You will need to click each of the links to the hemispheres in order to find the image url 
-# to the full resolution image.
-# Save both the image url string for the full resolution hemisphere image, 
-# and the Hemisphere title containing the hemisphere name. 
-# Use a Python dictionary to store the data using the keys img_url and title.
-# Append the dictionary with the image url string and the hemisphere title to a list. 
-# This list will contain one dictionary for each hemisphere.
 
-
-    url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
-    browser.visit(url)
-
-    browser.click_link_by_partial_text('Cerberus Hemisphere Enhanced')
-    time.sleep(5)
-
-    html = browser.html
-    soup = bs(html, 'html.parser')
-    hemis_html ='https://astrogeology.usgs.gov'
-
-    c_h = soup.find('img', class_='wide-image')['src']
-    cerb_h =hemis_html + c_h
-
-    browser.click_link_by_partial_text('Back')
-    time.sleep(5)
-
-    browser.click_link_by_partial_text('Schiaparelli Hemisphere Enhanced')
-    time.sleep(5)
-
-    html = browser.html
-    soup = bs(html, 'html.parser')
-
-    sc_h = soup.find('img', class_='wide-image')['src']
-    schi_h =hemis_html + sc_h
-
-    browser.click_link_by_partial_text('Back')
-
-    browser.click_link_by_partial_text('Syrtis Major Hemisphere Enhanced')
-    time.sleep(5)
-
-    html = browser.html
-    soup = bs(html, 'html.parser')
-
-    sy_h = soup.find('img', class_='wide-image')['src']
-    sym_h =hemis_html + sy_h
-
-    browser.click_link_by_partial_text('Back')
-
-    browser.click_link_by_partial_text('Valles Marineris Hemisphere Enhanced')
-    time.sleep(5)
-
-    html = browser.html
-    soup = bs(html, 'html.parser')
-
-    vm_h = soup.find('img', class_='wide-image')['src']
-    vam_h =hemis_html + vm_h
-
-    browser.click_link_by_partial_text('Back')
-
-    hemisphere_image_urls = [
-    {"title": "Valles Marineris Hemisphere", "img_url": vam_h},
-    {"title": "Cerberus Hemisphere", "img_url": cerb_h},
-    {"title": "Schiaparelli Hemisphere", "img_url": schi_h},
-    {"title": "Syrtis Major Hemisphere", "img_url": sym_h},
-    ]
 
     mars = {'headline': news_title,
     'article':news_p,
