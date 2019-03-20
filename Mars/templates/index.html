@@ -58,7 +58,7 @@
         </div>
     </div> <!-- End second row -->
 
-    <!-- Start third row -->
+    <!-- Start hemisphere section row -->
     <div class="row">
     <div class='col-sm-12'></div>
       <h2 style='text-align: center'> Mars Hemispheres</h2> 
@@ -95,9 +95,51 @@
               
             </div>
     </div> 
-    <!-- End third row -->
+    <!-- End hemishpere section -->
     
-    <div class='row'></div>
+   <!-- <div class="row">
+      <div class='col-sm-12'>
+
+          {% for dict in mars.hemisphere_img %}
+        
+        <div class="row">
+          <div class="col-sm-6 box">
+            <h3>{{dict.title}}</h3> 
+      
+            <img class='featured' src ={{dict.img_url}} alt={{dict.title}}/>
+      
+            </div>
+      
+            <div class="col-sm-6 box">
+              <h3 >{{dict.title}}</h3> 
+              
+             <img class='featured' src ={{dict.img_url}} alt="Cerberus Hemisphere Enhanced"/>
+            
+            </div>
+    </div>
+  
+    <div class="row">
+            <div class="col-sm-6 box">
+              <h3>{{dict.title}}</h3> 
+              
+              <img class='featured' src={{dict.img_url}} alt="Valles Marineris Hemisphere" />
+              
+            </div>
+            
+            <div class="col-sm-6 box">
+              <h3>{{dict.title}}</h3> 
+              
+              <img class='featured' src ={{dict.img_url}} alt="Syrtis Major Hemisphere Enhanced" />
+              
+            </div>
+            {% endfor %}
+    </div>-->
+    
+    <!-- End hemishpere section -->
+
+
+      </div>
+    </div>
 
 </div> <!--end of container-->
 </body>
