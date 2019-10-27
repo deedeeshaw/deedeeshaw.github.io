@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
+	
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -42,7 +42,7 @@
 	          <!-- <li class="nav-item active"><a href="#" class="nav-link">Home</a></li> -->
 	          <!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li> -->
 	          <!-- <li class="nav-item"><a href="speakers.html" class="nav-link">Speakers</a></li> -->
-	          <li class="nav-item"><a href="#" class="nav-link">Schedule</a></li>
+	          <li class="nav-item"><a href="#schedule" class="nav-link">Event Schedule</a></li>
 	          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 	          <!-- <li class="nav-item"><a href="#" class="nav-link">Contact</a></li> -->
 	          <!-- <li class="nav-item cta mr-md-2"><a href="#" class="nav-link">Buy ticket</a></li> -->
@@ -61,7 +61,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-lg-6 col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }" style='opacity:1'>
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span>Portland 2020</span></h1>
-            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="icon-calendar mr-2"></span>9-12 October 2020 - Portland, OR</p>
+            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="icon-calendar mr-2"></span>9-12 October 2020</p>
             <div id="timer" class="d-flex">
 						  <div class="time" id="days"></div>
 						  <div class="time pl-3" id="hours"></div>
@@ -101,8 +101,9 @@
         <div class="row d-flex">
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-placeholder"></span></div>
-              <div class="media-body">
+              <!-- <div class="icon"><span class="flaticon-placeholder"></span></div> -->
+			  <img src='images/venue.png' alt="venue">
+			  <div class="media-body">
                 <h3 class="heading mb-3">Venue</h3>
                 <p>	16400 SW Nighthawk Dr. Beaverton, OR 97007, USA</p>
               </div>
@@ -110,27 +111,33 @@
           </div>
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-world"></span></div>
+			  <!-- <div class="icon"><span class="flaticon-world"></span></div> -->
+			  <img src='images/transport.png' alt="transport">
               <div class="media-body">
                 <h3 class="heading mb-3">Transport</h3>
                 <p>A ten seater.</p>
               </div>
             </div>    
           </div>
-          <!-- <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-hotel"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Menu</h3>
-                <p>Coming Soon.</p>
-              </div>
-            </div>      
-          </div> -->
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-cooking"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Restaurant</h3>
+              <!-- <div class="icon"><span class="flaticon-hotel"></span></div> -->
+			  <img src='images/list.png' alt="packing list">
+			  <div class="media-body">
+                <h3 class="heading mb-3">Packing List</h3>
+                <ul>
+					<li>walking shoes</li>
+					<li>pants with elastic band</li>
+				</ul>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <!-- <div class="icon"><span class="flaticon-cooking"></span></div> -->
+			  <img src='images/restaurant.png' alt="menu">
+			  <div class="media-body">
+                <h3 class="heading mb-3">Menu</h3>
                 <p>Coming Soon.</p>
               </div>
             </div>      
@@ -139,41 +146,42 @@
       </div>
     </section>
    	
-		<!-- <section class="ftco-section ftco-no-pt ftco-no-pb">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+	 <section class="ftco-section ftco-no-pt ftco-no-pb">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
 					</div>
-					<div class="col-md-7 wrap-about py-md-5 ftco-animate">
-	          <div class="heading-section mb-5 pt-5 pl-md-5">
+				<div class="col-md-7 wrap-about py-md-5 ftco-animate">
+	          	<div class="heading-section mb-5 pt-5 pl-md-5">
 	          	<div class="pr-md-5 mr-md-5">
-		            <h2 class="mb-4">What is all about us?</h2>
+		            <h2 class="mb-4">About Us</h2>
 	            </div>
 
-	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-	            <p><a href="#" class="btn btn-primary">Join now</a></p>
-	          </div>
-					</div>
+	            <p>We are the girls of the Mama Parsi school. </p>
+	            <!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p> -->
+	            <!-- <p><a href="#" class="btn btn-primary">Join now</a></p> -->
+	          	</div>
 				</div>
 			</div>
-
-		<section class="ftco-section">
+		</div>
+	</section>
+	
+	<section class="ftco-section" id='schedule'>
 			<div class="container">
 				<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-3">Conference Schedule</h2>
+            <h2 class="mb-3">Event Schedule</h2>
           </div>
         </div>
         <div class="ftco-schedule">
-					<div class="row">
+		<div class="row">
             <div class="col-md-3 nav-link-wrap text-center text-md-right">
 	            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">First Day <span>21 July 2019</span></a>
+	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">First Day <span>9 October 2020</span></a>
 
-	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Second Day <span>22 July 2019</span></a>
+	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Second Day <span>10 October 2020</span></a>
 
-	              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Third Day <span>23 July 2019</span></a>
+	              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Third Day <span>11 October 2020</span></a>
 
 	            </div>
 	          </div>
@@ -183,20 +191,20 @@
 
 	              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
 	              	<div class="speaker-wrap ftco-animate d-md-flex">
-	              		<div class="img speaker-img" style="background-image: url(images/staff-1.jpg);"></div>
+	              		<div class="img speaker-img" style="background-image: url(images/sch-arrive.jpg);"></div>
 	              		<div class="text">
-	              			<h2><a href="#">Introduction to Business Leaders</a></h2>
-	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	              			<h2><a href="#">The Nifty Fifties Arrive</a></h2>
+	              			<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 	              			<span class="time">09:00 am - 4:30 pm</span>
 	              			<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
 	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3> -->
 	              		</div>
 	              	</div>
-	              	<div class="speaker-wrap ftco-animate d-md-flex">
+	              	<!-- <div class="speaker-wrap ftco-animate d-md-flex">
 	              		<div class="img speaker-img" style="background-image: url(images/staff-2.jpg);"></div>
 	              		<div class="text">
-	              			<h2><a href="#">Introduction to Business Leaders</a></h2>
+	              			<h2><a href="#">Go for walk, chat, eat, repeat</a></h2>
 	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 	              			<span class="time">09:00 am - 4:30 pm</span>
 	              			<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
@@ -207,29 +215,29 @@
 	              	<div class="speaker-wrap ftco-animate d-md-flex">
 	              		<div class="img speaker-img" style="background-image: url(images/staff-3.jpg);"></div>
 	              		<div class="text">
-	              			<h2><a href="#">Introduction to Business Leaders</a></h2>
+	              			<h2><a href="#">Make plans for 2021</a></h2>
 	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 	              			<span class="time">09:00 am - 4:30 pm</span>
 	              			<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
 	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
 	              		</div>
-	              	</div>
+	              	</div> -->
 	              </div>
 
 	              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
 	              	<div class="speaker-wrap ftco-animate d-md-flex">
-	              		<div class="img speaker-img" style="background-image: url(images/staff-4.jpg);"></div>
+	              		<div class="img speaker-img" style="background-image: url(images/sch-eat.jpg);"></div>
 	              		<div class="text">
-	              			<h2><a href="#">Introduction to Business Leaders</a></h2>
-	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	              			<h2><a href="#">Go for walk, chat, eat, repeat</a></h2>
+	              			<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 	              			<span class="time">09:00 am - 4:30 pm</span>
 	              			<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
 	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3> -->
 	              		</div>
 	              	</div>
-	              	<div class="speaker-wrap ftco-animate d-md-flex">
+	              	<!-- <div class="speaker-wrap ftco-animate d-md-flex">
 	              		<div class="img speaker-img" style="background-image: url(images/staff-1.jpg);"></div>
 	              		<div class="text">
 	              			<h2><a href="#">Introduction to Business Leaders</a></h2>
@@ -250,21 +258,21 @@
 	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
 	              		</div>
-	              	</div>
+	              	</div> -->
 	              </div>
 	              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
 	              	<div class="speaker-wrap ftco-animate d-md-flex">
-	              		<div class="img speaker-img" style="background-image: url(images/staff-3.jpg);"></div>
+	              		<div class="img speaker-img" style="background-image: url(images/sch-plan.jpg);"></div>
 	              		<div class="text">
-	              			<h2><a href="#">Introduction to Business Leaders</a></h2>
-	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	              			<h2><a href="#">Make plans for 2021</a></h2>
+	              			<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 	              			<span class="time">09:00 am - 4:30 pm</span>
 	              			<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
 	              			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3> -->
 	              		</div>
 	              	</div>
-	              	<div class="speaker-wrap ftco-animate d-md-flex">
+	              	<!-- <div class="speaker-wrap ftco-animate d-md-flex">
 	              		<div class="img speaker-img" style="background-image: url(images/staff-4.jpg);"></div>
 	              		<div class="text">
 	              			<h2><a href="#">Introduction to Business Leaders</a></h2>
@@ -286,7 +294,7 @@
 	              			<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
 	              		</div>
 	              	</div>
-	              </div>
+	              </div> -->
 	            </div>
 	          </div>
 	        </div>
@@ -294,7 +302,7 @@
 			</div>
 		</section>
 		
-		<section class="ftco-section ftco-gallery ftco-no-pt">
+		<!-- <section class="ftco-section ftco-gallery ftco-no-pt">
     	<div class="container-fluid px-4">
     		<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -332,9 +340,9 @@
 					</div>
         </div>
     	</div>
-    </section>
+    </section> -->
 
-    <section class="ftco-section testimony-section ftco-no-pt">
+    <!-- <section class="ftco-section testimony-section ftco-no-pt">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -403,10 +411,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
-    <section class="ftco-section ftco-no-pt">
+    <!-- <section class="ftco-section ftco-no-pt">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -485,10 +493,10 @@
 	        </div>
 	      </div>
       </div>
-    </section>
+    </section> -->
 
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <!-- <section class="ftco-section ftco-no-pt ftco-no-pb">
     	<div class="container">
     		<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -567,9 +575,9 @@
         	</div>
         </div>
     	</div>
-    </section>
+    </section> -->
 
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -624,9 +632,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 		
-		<section class="ftco-section-parallax ftco-section ftco-no-pt">
+	<!-- <section class="ftco-section-parallax ftco-section ftco-no-pt">
       <div class="parallax-img d-flex align-items-center">
         <div class="container">
           <div class="row d-flex justify-content-center">
@@ -647,23 +655,23 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Plataforma.</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">See you soon in Portland.</h2>
+              <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+              </ul> -->
             </div>
           </div>
-          <div class="col-md">
+          <!-- <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Useful Links</h2>
               <ul class="list-unstyled">
@@ -699,11 +707,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center"> -->
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	
+
           </div>
         </div>
       </div>
@@ -732,4 +742,5 @@
   <script src="js/main.js"></script>
     
   </body>
+  
 </html>
