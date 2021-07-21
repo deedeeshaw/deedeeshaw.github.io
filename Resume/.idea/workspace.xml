@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="7c355432-080c-4c23-8660-93933611e094" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
+=======
+    <list default="true" id="7c355432-080c-4c23-8660-93933611e094" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +97,7 @@
       <updated>1619648778961</updated>
       <workItem from="1619648780368" duration="5042000" />
       <workItem from="1620671347542" duration="934000" />
-      <workItem from="1620757798190" duration="34000" />
+      <workItem from="1620757798190" duration="271000" />
     </task>
     <servers />
   </component>
