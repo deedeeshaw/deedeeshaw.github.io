@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -33,13 +33,30 @@
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
+                <h1 class="font-weight-light">Exhibits at the MET</h1>
+                <p>This is a simple project to demonstrate how JavaScript is used to retrieve the data using the MET's open source API.</p>
+                <p>Click the Spin button to randomly select the details of an item at The Metropolitan Museum of Art</p>
+
+                <canvas class="col-lg-7" id="image" width="150" height="75" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." ></canvas> 
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light">Exhibits at the MET</h1>
-                    <p>is used to retrieve the data using the MET's open source API.</p>
+                    <div id="details">
+                        <label>Year art was acquired: </label>
+                        <br>
+                        <label>Curatorial department: </label>
+                        <br>
+                        <label>Type of object: </label>
+                        <br>
+                        <label>Date when artwork was designed/created: </label>
+                        <br>
+                        <label>Country where artwork was created or found: </label>
+                        <br>
+                        <label>Page on metmuseum.org: </label>
+                    </div>
+                   
                     <br>
-                     <p>Click the Spin button to randomly select the details of an item at The Metropolitan Museum of Art</p>
-                    <button class="btn btn-primary" onclick="renderApi()">Spin</button>
+                    <div>
+                        <button class="btn btn-primary" onclick="renderApi()">Spin</button>
+                    </div>
                 </div>
             </div>
             <!-- Call to Action-->
@@ -83,7 +100,7 @@
             <br>
             <br>
             <br>
-
+            </div>
 
             <!-- Footer-->
         <footer class="py-5 bg-dark">
