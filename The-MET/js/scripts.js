@@ -17,30 +17,45 @@ async function getApi() {
 
 async function renderApi() {
     let object = await getApi();
-    console.log(object.accessionYear, object.department, object.objectName, object.title, object.prinaryImageSmall)
+    console.log(object.accessionYear, object.department, object.objectName, object.title, object.primaryImageSmall)
     
     const detailSegment =
         `<div>
-            <label>Year art was acquired: ${object.accessionYear} </label>
+            <label>Year art was acquired: <strong>${object.accessionYear} </strong> </label>
             <br>
-            <label>Curatorial department: ${object.department} </label>
+            <label>Curatorial department: <strong>${object.department}</strong> </label>
             <br>
-            <label>Type of object: ${object.objectName} </label>
+            <label>Type of object: <strong>${object.objectName}</strong> </label>
             <br>
-            <label>Date when artwork was designed/created: ${object.objectDate} </label>
+            <label>Date when artwork was designed/created: <strong>${object.objectDate} </strong></label>
             <br>
-            <label>Country where artwork was created or found: ${object.country} </label>
+            <label>Country where artwork was created or found: <strong>${object.country}</strong> </label>
             <br>
             <label>Page on metmuseum.org: <a href="${object.objectURL}" target="_blank"> Click here<a>  </label>
         </div>`
         
     document.querySelector('#details').innerHTML = detailSegment;
 
-    const imageDisplay = document.getElementById('image').getContext('2d')
-    let objectImage = new Image();
-    imageDisplay.drawImage(objectImage, 0, 0)
-
-    objectImage.src = object.primaryImageSmall
-    console.log(objectImage.src);
-
+    const imgSrc = object.primaryImageSmall
+    console.log(imgSrc)
+    await loadImage(imgSrc);
 }
+
+function copyCanvas(img) {
+    var canvas = document.getElementById('image');
+    var ctx = canvas.getContext('2d');
+    console.log(img.naturalHeight)
+    canvas.width = img.naturalWidth
+    canvas.height = img.naturalHeight
+
+    ctx.drawImage(img, 0, 0);
+}
+
+function loadImage(imgSrc) {
+    var img = new Image();
+    img.onload = function () {
+        copyCanvas(img);
+    };
+    img.src = imgSrc;
+}
+
