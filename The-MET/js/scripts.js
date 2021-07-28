@@ -44,10 +44,8 @@ async function renderApi() {
 function copyCanvas(img) {
     var canvas = document.getElementById('image');
     var ctx = canvas.getContext('2d');
-    console.log(img.naturalHeight)
     canvas.width = img.naturalWidth
     canvas.height = img.naturalHeight
-
     ctx.drawImage(img, 0, 0);
 }
 
